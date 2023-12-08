@@ -43,7 +43,7 @@ section {
   margin-left: 306px;
   float: left;
   width: 70%;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 section h1 {
