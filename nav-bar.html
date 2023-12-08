@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <center><li id="homepage">My To-do list</li>
+            <li id="insc">S'inscrire</li>
+            <li id="conn">Se connecter</li></center>
+        </ul>
+    </nav>
+    <article>
+        
+        <form onsubmit="return false;">
+            <fieldset><center>
+                <label for="AddTask">
+                    <input type="text" id="AddTask" placeholder="Enter task">
+                    <button onclick="addTask()" id="add">Add Task <i class="bi bi-plus-circle-fill"></i></button>
+                </label>
+                <label for="DeleteTask" >
+                    <button id="min">
+                        Delete Task  <i class="bi bi-dash-circle-fill"></i>
+                    </button>
+                </label>
+                <label for="SeeTasks" >
+                    <button onclick="SeeAllTasks()" id="all">
+                        See Tasks <i class="bi bi-card-checklist"></i>
+                    </button>
+                </label></center>
+            </fieldset>
+        </form>
+        <div id="taskList" style="display: none;">
+            <h2>Task List</h2>
+            <ol id="allTasks">
+            </ol>
+        </div>
+    </article>
+    <aside>
+        <center><p>Timer</p>
+        <p id="timerDisplay">00:00:00</p>
+        <button onclick="startTimer()">Start <i class="bi bi-hourglass-top"></i></button>
+        <button onclick="stopTimer()">Stop <i class="bi bi-arrow-counterclockwise"></i></button>
+        <button onclick="resetTimer()">Reset</button>
+        </center>
+    </aside>
+
+    <script>
+        function SeeAllTasks() {
+            var taskList = document.getElementById('taskList');
+            taskList.style.display = (taskList.style.display === 'none' ||  taskList.style.display === '') ? 'block' : 'none';
+        }
+
+            function addTask() {
+            var task = document.getElementById('AddTask');
+            var tasksList = document.getElementById('allTasks');
+            var newTask = document.createElement('li');
+            newTask.textContent = task.value;
+            tasksList.appendChild(newTask);
+            task.value = '';
+            document.getElementById('taskList').style.display = 'block';
+        }
+    var timer;
+    var seconds = 0;
+    var minutes = 0;
+    var hours = 0;
+
+    function startTimer() {
+        timer = setInterval(updateTimer, 1000);
+    }
+
+    function stopTimer() {
+        clearInterval(timer); 
+    }
+
+    function resetTimer() {
+        stopTimer();
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        updateTimerDisplay();
+    }
+
+    function updateTimer() {
+        seconds++;
+        if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes === 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+        updateTimerDisplay();
+    }
+
+    function updateTimerDisplay() {
+        var formattedTime =
+            padNumber(hours) + ':' + padNumber(minutes) + ':' + padNumber(seconds);
+        document.getElementById('timerDisplay').textContent = formattedTime;
+    }
+
+    function padNumber(number) {
+        return number < 10 ? '0' + number : number;
+    }
+    </script>
+</body>
+</html>

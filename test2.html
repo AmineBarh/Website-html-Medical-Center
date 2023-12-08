@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle2.css">
+</head>
+<body>
+    <header id="Home" class="navbar">
+        <img src="Logo.png" alt="Logo">
+        <a href="#Home" target="down" id="g1">Home</a>
+        <a href="#Gal" target="down" id="g2">Gallery</a>
+        <a href="#Tak" target="down" id="g3">Take RDV</a>
+    </header>
+
+
+    <section id="sec">
+        <h1>Experience <span id="gras">top-notch</span><br> care in our center</h1>
+        <p>Step into excellence at our state-of-the-art medical center,  where your healtd journey begins witd a warm welcome and a commitment to exceptional care</p>
+    </section>
+
+
+
+    <section id="Gal">
+        <center><h1>Explore Our <span id="gras">Modern Facilities</span></h1></center>
+        <table>
+    <center>
+        <tr>
+        <td id="RC" class="rc">
+            <element id="rrre">Reception Area:</element>
+        <img src="" alt="">
+        <element id="pCA"> Welcome to our inviting reception area, the first 
+            stop on your journey to exceptional healtdcare. 
+            Our friendly staff at the reception desk is ready 
+            to assist you witd a warm smile, ensuring a 
+            seamless and comfortable check-in experience</element>
+        </td>
+        <td id="RC" class="la"><element id="llla">Laboratory:</element> 
+            <img src="Laboratory-pana 1.png" alt="lab" id="ila" >
+            <element id="pCA">Explore our state-of-the-art laboratory where 
+            cutting-edge technology meets precision. 
+            Our skilled lab technicians work diligently 
+            to ensure accurate and timely test results, 
+            contributing to your comprehensive healtdcare 
+            experience</element>
+        </td>
+        </tr>
+    </center>
+    </table>
+    <table>
+        <tr>
+        <td id="RC" class="ca"> <element id="ccca">Cardiologist:</element> 
+            <img src="Cardiologist-pana 1.png" alt="Card" id="ica" >
+            <element id="pCA">Meet our Cardiologist, Dr. Y, a dedicated 
+            expert in heart healtd. Witd a focus on preventive
+            care and advanced diagnostics, Dr. Y and 
+            our cardiology team are committed to ensuring 
+            the well-being of your hear</element>
+        </td>
+        <td id="RC" class="gy"> <element id="gggy">Gynecology:</element> 
+            <img src="Gynecology consultation-pana 1.png" alt="gyn" id="igy">
+            <element id="pCA"> Our Gynecology department, led by Dr. X, 
+            is dedicated to women's healtd and well-being. 
+            From routine check-ups to specialized care, 
+            our team ensures comprehensive and 
+            compassionate gynecological services</element>
+        </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+        <td id="RC" class="bd">
+            <element id="bbbl">Blood Donation:</element>
+            <img src="Frame 15.png" alt="blo" id="ifr">
+            <element id="pCA">Be a part of our life-saving mission! 
+            Our blood donation center provides a safe and 
+            welcoming environment for donors. Join us in 
+            making a difference and contributing to the 
+            community's healtd</element>
+        </td>
+        <td id="RC" class="re">
+            <element id="rrrre">Researchers:</element>
+            <img src="Researchers-pana 1.png" alt="rease" id="ire">
+            <element id="pCA">Join our team of passionate researchers working 
+            tirelessly to advance medical knowledge and 
+            improve patient care. tdrough innovative studies
+             and collaborations, our researchers contribute 
+            to the forefront of healtdcare innovation</element>
+        </td>
+        </tr>
+        </table>
+    </section>
+    
+    <section id="Tak">
+        <center><h1>Take <span id="gras">RDV</span> in our reknown <br>Medical Center:</h1></center>
+        <form name="F" method="post" onsubmit="return verif()">
+            <div class="out-rectangle">
+                <h3>These informations will not be shared:</h3>
+                <div class="in-rectangle">
+                <table id="foot" >
+                    <center>
+                    <tr>
+                        <td id="taker" style="padding-top: 70px;">Which Doctor:</td>  
+                    </tr>
+                    <tr>
+                        <td id="taker">
+                            <select name="" id="">
+                                <option value="Gynecology">Gynecology</option>
+                                <option value="Gynecology">Blood Donation</option>
+                                <option value="Gynecology">Researchers</option>
+                                <option value="Gynecology">Cardiology</option>
+                                <option value="Gynecology">Laboratory</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="taker">If you have a file for the doctor:(Optional):</td>
+                    </tr>
+                    <tr>
+                        <td id="taker"><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td id="taker">Email: (Optional)</td>
+                    </tr>
+                    <tr>
+                        <td id="taker"><input type="text" style="width: 300px; height: 25px;" id="emailinput"></td>
+                    </tr>
+                    <tr>
+                        <td id="taker">Phone number:</td>
+                    </tr>
+                    <tr>
+                        <td id="taker"><input type="text" style="width: 300px; height: 25px;" id="phoneinput" required></td>
+                    </tr>
+                    <tr>
+                        <td id="taker">Date:</td>
+                    </tr>
+                    <tr>
+                        <td id="taker"><input type="date" style="width: 300px; height: 25px;" id="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="taker">Time:</td>
+                    </tr>
+                    <tr>
+                        <td id="taker" style="padding-bottom: 70px; width: 300px; height: 25px;"><input type="time" id="time"></td>
+
+                    </tr>
+                    </center>
+                </div>
+            </div>
+                </table>
+            <center>
+                <input type="submit" value="Take RDV" id="submitBtn">
+                <input type="reset" value="Maybe Later :)" id="resetBtn">
+            </center>
+        </form>
+    </section>
+</body>
+    <script>
+        function est_alpha(ch) {
+    if (ch.length === 0) {
+        return false;
+    }
+    for (var i = 0; i < ch.length; i++) {
+        var c = ch.charAt(i);
+        var v = (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9');
+        if (!v) {
+            return false;
+        }
+    }
+    return true;
+}
+    function verif() {
+    var ch = document.F.emailinput.value;
+    var phone = document.F.phoneinput.value;
+    var selectedDate = new Date(document.F.date.value);
+    var selectedTime = parseInt(document.F.time.value);
+
+    function email_valide(ch) {
+    if (ch.length === 0 || ch.length > 50) {
+        return false;
+    }
+    var iat = ch.indexOf('@');
+    var ipt = ch.lastIndexOf('.');
+    if (iat === -1 || ipt === -1 || ipt < iat) {
+        return false;
+    }
+    var ch1 = ch.substring(0, iat),
+        ch2 = ch.substring(iat + 1, ipt),
+        ch3 = ch.substring(ipt + 1);
+    if (ch1.length < 3 || !est_alpha(ch1) ||
+        ch2.length < 3 || !est_alpha(ch2) ||
+        ch3.length < 2 || ch3.length > 4 || !est_alpha(ch3)) {
+        return false;
+    }
+    if (ch.indexOf('@') === -1) { 
+        alert("Please enter a valid email address");
+        return false;
+    }
+    return true;
+}
+function phone_valide(phone) {
+        var phonecode = /^(98|94|24)\d{6}$/; // Matches 98, 94, or 24 followed by 6 digits
+        if (!phonecode.test(phone)) {
+            alert("Please enter a valid phone number with 8 digits starting with 98, 94, or 24");
+            return false;
+        }
+        return true;
+    }
+    function isSunday(date) {
+        return date.getDay() === 0;
+    }
+
+    if (isSunday(selectedDate)) {
+        alert("Please choose a date other than Sunday");
+        return false;
+    }
+    function isTimeValid(time) {
+        return time >= 8 && time <= 16;
+    }
+    if (!isTimeValid(selectedTime)) {
+        alert("Please choose a time between 8:00 and 16:45");
+        return false;
+    }
+return email_valide(ch) && phone_valide(phone);
+    }
+    </script>
+</html>
