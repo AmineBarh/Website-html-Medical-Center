@@ -146,6 +146,10 @@ fieldset {
 
 #Tak{
   display: contents;
+  margin-left: 306px;
+  float: left;
+  width: 100%;
+  -ms-layout-grid: auto;
 }
 
 
