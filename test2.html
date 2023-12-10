@@ -14,7 +14,7 @@
         <img src="Logo.png" alt="Logo">
         <a href="#Home" target="down" id="g1">Home</a>
         <a href="#Gal" target="down" id="g2">Gallery</a>
-        <a href="#footertake" target="down" id="g3">Take RDV</a>
+        <a href=".footertake" target="down" id="g3">Take RDV</a>
     </header>
 
 
@@ -32,7 +32,7 @@
         <tr>
         <td id="RC" class="rc">
             <element id="rrre">Reception Area:</element>
-        <img src="" alt="">
+        <img src="Reception- Doctor's appointment.png" alt="">
         <element id="pCA"> Welcome to our inviting reception area, the first 
             stop on your journey to exceptional healtdcare. 
             Our friendly staff at the reception desk is ready 
@@ -96,8 +96,8 @@
     </section>
     
     <section id="Tak">
-        <center><h1 id="footertake">Take <span id="gras">RDV</span> in our reknown <br>Medical Center:</h1></center>
-        <form name="F" method="post" onsubmit="return verif()">
+        <center><h1 class="footertake">Take <span id="gras">RDV</span> in our reknown <br>Medical Center:</h1></center>
+        <form name="F" method="post" onsubmit="return verif()" action="test3.html">
             <div class="out-rectangle">
                 <h3>These informations will not be shared:</h3>
                 <div class="in-rectangle">
@@ -157,8 +157,20 @@
                 <input type="reset" value="Maybe Later :)" id="resetBtn">
             </center>
         </form>
-    </footer>
+    </section>
 </body>
+<footer>
+    <div>
+        <p class="pfoot">You can find us in this location:</p>
+    </div>
+    <div>
+        <h5>Facebook:</h5>
+        <h5>Instagram:</h5>
+        <h5>Phone number:</h5>
+        <h5>Email:</h5>
+    </div>
+</footer>
+</html>
     <script>
         function est_alpha(ch) {
     if (ch.length === 0) {
@@ -229,4 +241,3 @@ function phone_valide(phone) {
 return email_valide(ch) && phone_valide(phone);
     }
     </script>
-</html>
