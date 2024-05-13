@@ -40,4 +40,22 @@ cd website
 
 The webpage and the form are displayed in the video below:
 
-https://github.com/AmineBarh/website/assets/113045809/ce592601-6c21-424a-9342-fda2f5f62885
+https://github.com/AmineBarh/Website-html-Medical-Center/assets/113045809/8a3b2b29-4e2e-41d8-a766-b85b236903bc
+
+
+## Prototype Version (v2) in Figma
+
+An alternate version of the website was created as a prototype in Figma. This version, labeled as v2, features changes in design elements and HTML structure compared to the original static webpage.
+
+- **Visual Redesign**: The v2 prototype showcases a redesigned interface with updated visual elements, including color schemes, typography, and layout arrangements, aimed at exploring different design possibilities.
+
+ ##### Watch the video: 
+ 
+ Demonstration of the v2 Figma prototype to get an overview of the alternate version's design and structure
+ 
+### Video Demonstration
+
+
+
+https://github.com/AmineBarh/Website-html-Medical-Center/assets/113045809/db0e8e92-8ba4-4ec1-ab9c-e4c534744995
+
